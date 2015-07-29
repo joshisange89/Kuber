@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AFED65141B66E1AD0071E75B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED65131B66E1AD0071E75B /* main.m */; };
+		AFED65171B66E1AD0071E75B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED65161B66E1AD0071E75B /* AppDelegate.m */; };
+		AFED65201B66E1AD0071E75B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFED651E1B66E1AD0071E75B /* Main.storyboard */; };
+		AFED65221B66E1AD0071E75B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFED65211B66E1AD0071E75B /* Images.xcassets */; };
+		AFED65251B66E1AD0071E75B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFED65231B66E1AD0071E75B /* LaunchScreen.xib */; };
+		AFED65311B66E1AD0071E75B /* KuberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED65301B66E1AD0071E75B /* KuberTests.m */; };
+		AFED654B1B66E3430071E75B /* MarketPlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED65471B66E3430071E75B /* MarketPlaceViewController.m */; };
+		AFED654C1B66E3430071E75B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED654A1B66E3430071E75B /* SecondViewController.m */; };
+		AFED654F1B66E3DF0071E75B /* MarketItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED654E1B66E3DF0071E75B /* MarketItem.m */; };
+		AFED65561B66E6A40071E75B /* MarketItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED65551B66E6A40071E75B /* MarketItemCollectionViewCell.m */; };
+		AFED655A1B66F1850071E75B /* Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED65591B66F1850071E75B /* Layout.m */; };
+		AFED655D1B6719250071E75B /* MarketItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED655C1B6719250071E75B /* MarketItemDetailViewController.m */; };
+		AFED65631B671F3C0071E75B /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED65621B671F3C0071E75B /* CartViewController.m */; };
+		AFED65661B6721AB0071E75B /* FilterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED65651B6721AB0071E75B /* FilterTableViewController.m */; };
+		AFED65681B6724AD0071E75B /* Filters.plist in Resources */ = {isa = PBXBuildFile; fileRef = AFED65671B6724AD0071E75B /* Filters.plist */; };
+		AFED656B1B6734110071E75B /* Kuber.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFED65691B6734110071E75B /* Kuber.xcdatamodeld */; };
+		AFED656E1B67354B0071E75B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED656D1B67354B0071E75B /* Social.framework */; };
+		AFED65701B67355A0071E75B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED656F1B67355A0071E75B /* Accounts.framework */; };
+		AFED65721B6735690071E75B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED65711B6735690071E75B /* libsqlite3.dylib */; };
+		AFED65781B6735AF0071E75B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED65771B6735AF0071E75B /* StoreKit.framework */; };
+		AFED657A1B6735B70071E75B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED65791B6735B70071E75B /* Security.framework */; };
+		AFED657C1B6735C30071E75B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED657B1B6735C30071E75B /* QuartzCore.framework */; };
+		AFED657E1B6735CB0071E75B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED657D1B6735CB0071E75B /* MobileCoreServices.framework */; };
+		AFED65801B6735DA0071E75B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED657F1B6735DA0071E75B /* CoreLocation.framework */; };
+		AFED65821B6735E20071E75B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED65811B6735E20071E75B /* CoreGraphics.framework */; };
+		AFED65841B6735F00071E75B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED65831B6735F00071E75B /* CFNetwork.framework */; };
+		AFED65861B6735F90071E75B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED65851B6735F90071E75B /* AudioToolbox.framework */; };
+		AFED65871B67367A0071E75B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED65751B6735970071E75B /* SystemConfiguration.framework */; };
+		AFED65881B67367C0071E75B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED65731B6735880071E75B /* libz.dylib */; };
+		AFED658F1B67369E0071E75B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED65891B67369E0071E75B /* Bolts.framework */; };
+		AFED65901B67369E0071E75B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED658A1B67369E0071E75B /* Parse.framework */; };
+		AFED65911B67369F0071E75B /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED658B1B67369E0071E75B /* ParseCrashReporting.framework */; };
+		AFED65921B67369F0071E75B /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED658C1B67369E0071E75B /* ParseFacebookUtils.framework */; };
+		AFED65931B67369F0071E75B /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED658D1B67369E0071E75B /* ParseFacebookUtilsV4.framework */; };
+		AFED65941B67369F0071E75B /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED658E1B67369E0071E75B /* ParseUI.framework */; };
+		AFED65981B68342C0071E75B /* CartItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFED65961B68342C0071E75B /* CartItemTableViewCell.m */; };
+		AFED65991B68342C0071E75B /* CartItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFED65971B68342C0071E75B /* CartItemTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AFED652B1B66E1AD0071E75B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFED65061B66E1AD0071E75B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFED650D1B66E1AD0071E75B;
+			remoteInfo = Kuber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AFED650E1B66E1AD0071E75B /* Kuber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kuber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFED65121B66E1AD0071E75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFED65131B66E1AD0071E75B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AFED65151B66E1AD0071E75B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AFED65161B66E1AD0071E75B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AFED651F1B66E1AD0071E75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AFED65211B66E1AD0071E75B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AFED65241B66E1AD0071E75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AFED652A1B66E1AD0071E75B /* KuberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KuberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFED652F1B66E1AD0071E75B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFED65301B66E1AD0071E75B /* KuberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KuberTests.m; sourceTree = "<group>"; };
+		AFED65461B66E3430071E75B /* MarketPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketPlaceViewController.h; sourceTree = "<group>"; };
+		AFED65471B66E3430071E75B /* MarketPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketPlaceViewController.m; sourceTree = "<group>"; };
+		AFED65491B66E3430071E75B /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		AFED654A1B66E3430071E75B /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		AFED654D1B66E3DF0071E75B /* MarketItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketItem.h; sourceTree = "<group>"; };
+		AFED654E1B66E3DF0071E75B /* MarketItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketItem.m; sourceTree = "<group>"; };
+		AFED65541B66E6A40071E75B /* MarketItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketItemCollectionViewCell.h; sourceTree = "<group>"; };
+		AFED65551B66E6A40071E75B /* MarketItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketItemCollectionViewCell.m; sourceTree = "<group>"; };
+		AFED65581B66F1850071E75B /* Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout.h; sourceTree = "<group>"; };
+		AFED65591B66F1850071E75B /* Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout.m; sourceTree = "<group>"; };
+		AFED655B1B6719250071E75B /* MarketItemDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketItemDetailViewController.h; sourceTree = "<group>"; };
+		AFED655C1B6719250071E75B /* MarketItemDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketItemDetailViewController.m; sourceTree = "<group>"; };
+		AFED65611B671F3C0071E75B /* CartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		AFED65621B671F3C0071E75B /* CartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		AFED65641B6721AB0071E75B /* FilterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTableViewController.h; sourceTree = "<group>"; };
+		AFED65651B6721AB0071E75B /* FilterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTableViewController.m; sourceTree = "<group>"; };
+		AFED65671B6724AD0071E75B /* Filters.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Filters.plist; sourceTree = "<group>"; };
+		AFED656A1B6734110071E75B /* Kuber.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kuber.xcdatamodel; sourceTree = "<group>"; };
+		AFED656D1B67354B0071E75B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		AFED656F1B67355A0071E75B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		AFED65711B6735690071E75B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		AFED65731B6735880071E75B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AFED65751B6735970071E75B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AFED65771B6735AF0071E75B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AFED65791B6735B70071E75B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AFED657B1B6735C30071E75B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AFED657D1B6735CB0071E75B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AFED657F1B6735DA0071E75B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AFED65811B6735E20071E75B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AFED65831B6735F00071E75B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AFED65851B6735F90071E75B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AFED65891B67369E0071E75B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		AFED658A1B67369E0071E75B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		AFED658B1B67369E0071E75B /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		AFED658C1B67369E0071E75B /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		AFED658D1B67369E0071E75B /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		AFED658E1B67369E0071E75B /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		AFED65951B68342C0071E75B /* CartItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CartItemTableViewCell.h; sourceTree = "<group>"; };
+		AFED65961B68342C0071E75B /* CartItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CartItemTableViewCell.m; sourceTree = "<group>"; };
+		AFED65971B68342C0071E75B /* CartItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartItemTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFED650B1B66E1AD0071E75B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFED658F1B67369E0071E75B /* Bolts.framework in Frameworks */,
+				AFED65901B67369E0071E75B /* Parse.framework in Frameworks */,
+				AFED65911B67369F0071E75B /* ParseCrashReporting.framework in Frameworks */,
+				AFED65921B67369F0071E75B /* ParseFacebookUtils.framework in Frameworks */,
+				AFED65931B67369F0071E75B /* ParseFacebookUtilsV4.framework in Frameworks */,
+				AFED65941B67369F0071E75B /* ParseUI.framework in Frameworks */,
+				AFED65861B6735F90071E75B /* AudioToolbox.framework in Frameworks */,
+				AFED65841B6735F00071E75B /* CFNetwork.framework in Frameworks */,
+				AFED65821B6735E20071E75B /* CoreGraphics.framework in Frameworks */,
+				AFED65801B6735DA0071E75B /* CoreLocation.framework in Frameworks */,
+				AFED657E1B6735CB0071E75B /* MobileCoreServices.framework in Frameworks */,
+				AFED657C1B6735C30071E75B /* QuartzCore.framework in Frameworks */,
+				AFED657A1B6735B70071E75B /* Security.framework in Frameworks */,
+				AFED65781B6735AF0071E75B /* StoreKit.framework in Frameworks */,
+				AFED65881B67367C0071E75B /* libz.dylib in Frameworks */,
+				AFED65871B67367A0071E75B /* SystemConfiguration.framework in Frameworks */,
+				AFED65721B6735690071E75B /* libsqlite3.dylib in Frameworks */,
+				AFED65701B67355A0071E75B /* Accounts.framework in Frameworks */,
+				AFED656E1B67354B0071E75B /* Social.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFED65271B66E1AD0071E75B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AFED65051B66E1AD0071E75B = {
+			isa = PBXGroup;
+			children = (
+				AFED65101B66E1AD0071E75B /* Kuber */,
+				AFED652D1B66E1AD0071E75B /* KuberTests */,
+				AFED650F1B66E1AD0071E75B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AFED650F1B66E1AD0071E75B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFED650E1B66E1AD0071E75B /* Kuber.app */,
+				AFED652A1B66E1AD0071E75B /* KuberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFED65101B66E1AD0071E75B /* Kuber */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65151B66E1AD0071E75B /* AppDelegate.h */,
+				AFED65161B66E1AD0071E75B /* AppDelegate.m */,
+				AFED65441B66E3430071E75B /* View Controller */,
+				AFED65521B66E4530071E75B /* Custom Views */,
+				AFED65421B66E3420071E75B /* Model */,
+				AFED65571B66F1670071E75B /* Helpers */,
+				AFED651E1B66E1AD0071E75B /* Main.storyboard */,
+				AFED65211B66E1AD0071E75B /* Images.xcassets */,
+				AFED65231B66E1AD0071E75B /* LaunchScreen.xib */,
+				AFED65111B66E1AD0071E75B /* Supporting Files */,
+			);
+			path = Kuber;
+			sourceTree = "<group>";
+		};
+		AFED65111B66E1AD0071E75B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFED656C1B6734F70071E75B /* Frameworks */,
+				AFED65121B66E1AD0071E75B /* Info.plist */,
+				AFED65131B66E1AD0071E75B /* main.m */,
+				AFED65671B6724AD0071E75B /* Filters.plist */,
+				AFED65691B6734110071E75B /* Kuber.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFED652D1B66E1AD0071E75B /* KuberTests */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65301B66E1AD0071E75B /* KuberTests.m */,
+				AFED652E1B66E1AD0071E75B /* Supporting Files */,
+			);
+			path = KuberTests;
+			sourceTree = "<group>";
+		};
+		AFED652E1B66E1AD0071E75B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFED652F1B66E1AD0071E75B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AFED65421B66E3420071E75B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65431B66E3430071E75B /* Market Place */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AFED65431B66E3430071E75B /* Market Place */ = {
+			isa = PBXGroup;
+			children = (
+				AFED654D1B66E3DF0071E75B /* MarketItem.h */,
+				AFED654E1B66E3DF0071E75B /* MarketItem.m */,
+			);
+			path = "Market Place";
+			sourceTree = "<group>";
+		};
+		AFED65441B66E3430071E75B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65451B66E3430071E75B /* Market Place */,
+				AFED65481B66E3430071E75B /* Take Picture */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		AFED65451B66E3430071E75B /* Market Place */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65461B66E3430071E75B /* MarketPlaceViewController.h */,
+				AFED65471B66E3430071E75B /* MarketPlaceViewController.m */,
+				AFED655B1B6719250071E75B /* MarketItemDetailViewController.h */,
+				AFED655C1B6719250071E75B /* MarketItemDetailViewController.m */,
+				AFED65611B671F3C0071E75B /* CartViewController.h */,
+				AFED65621B671F3C0071E75B /* CartViewController.m */,
+				AFED65641B6721AB0071E75B /* FilterTableViewController.h */,
+				AFED65651B6721AB0071E75B /* FilterTableViewController.m */,
+			);
+			path = "Market Place";
+			sourceTree = "<group>";
+		};
+		AFED65481B66E3430071E75B /* Take Picture */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65491B66E3430071E75B /* SecondViewController.h */,
+				AFED654A1B66E3430071E75B /* SecondViewController.m */,
+			);
+			path = "Take Picture";
+			sourceTree = "<group>";
+		};
+		AFED65521B66E4530071E75B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65531B66E6860071E75B /* Market Place */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		AFED65531B66E6860071E75B /* Market Place */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65541B66E6A40071E75B /* MarketItemCollectionViewCell.h */,
+				AFED65551B66E6A40071E75B /* MarketItemCollectionViewCell.m */,
+				AFED65951B68342C0071E75B /* CartItemTableViewCell.h */,
+				AFED65961B68342C0071E75B /* CartItemTableViewCell.m */,
+				AFED65971B68342C0071E75B /* CartItemTableViewCell.xib */,
+			);
+			path = "Market Place";
+			sourceTree = "<group>";
+		};
+		AFED65571B66F1670071E75B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65581B66F1850071E75B /* Layout.h */,
+				AFED65591B66F1850071E75B /* Layout.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AFED656C1B6734F70071E75B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFED65891B67369E0071E75B /* Bolts.framework */,
+				AFED658A1B67369E0071E75B /* Parse.framework */,
+				AFED658B1B67369E0071E75B /* ParseCrashReporting.framework */,
+				AFED658C1B67369E0071E75B /* ParseFacebookUtils.framework */,
+				AFED658D1B67369E0071E75B /* ParseFacebookUtilsV4.framework */,
+				AFED658E1B67369E0071E75B /* ParseUI.framework */,
+				AFED65851B6735F90071E75B /* AudioToolbox.framework */,
+				AFED65831B6735F00071E75B /* CFNetwork.framework */,
+				AFED65811B6735E20071E75B /* CoreGraphics.framework */,
+				AFED657F1B6735DA0071E75B /* CoreLocation.framework */,
+				AFED657D1B6735CB0071E75B /* MobileCoreServices.framework */,
+				AFED657B1B6735C30071E75B /* QuartzCore.framework */,
+				AFED65791B6735B70071E75B /* Security.framework */,
+				AFED65771B6735AF0071E75B /* StoreKit.framework */,
+				AFED65751B6735970071E75B /* SystemConfiguration.framework */,
+				AFED65731B6735880071E75B /* libz.dylib */,
+				AFED65711B6735690071E75B /* libsqlite3.dylib */,
+				AFED656F1B67355A0071E75B /* Accounts.framework */,
+				AFED656D1B67354B0071E75B /* Social.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFED650D1B66E1AD0071E75B /* Kuber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFED65341B66E1AD0071E75B /* Build configuration list for PBXNativeTarget "Kuber" */;
+			buildPhases = (
+				AFED650A1B66E1AD0071E75B /* Sources */,
+				AFED650B1B66E1AD0071E75B /* Frameworks */,
+				AFED650C1B66E1AD0071E75B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kuber;
+			productName = Kuber;
+			productReference = AFED650E1B66E1AD0071E75B /* Kuber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AFED65291B66E1AD0071E75B /* KuberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFED65371B66E1AD0071E75B /* Build configuration list for PBXNativeTarget "KuberTests" */;
+			buildPhases = (
+				AFED65261B66E1AD0071E75B /* Sources */,
+				AFED65271B66E1AD0071E75B /* Frameworks */,
+				AFED65281B66E1AD0071E75B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFED652C1B66E1AD0071E75B /* PBXTargetDependency */,
+			);
+			name = KuberTests;
+			productName = KuberTests;
+			productReference = AFED652A1B66E1AD0071E75B /* KuberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFED65061B66E1AD0071E75B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Kubercube;
+				TargetAttributes = {
+					AFED650D1B66E1AD0071E75B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					AFED65291B66E1AD0071E75B = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = AFED650D1B66E1AD0071E75B;
+					};
+				};
+			};
+			buildConfigurationList = AFED65091B66E1AD0071E75B /* Build configuration list for PBXProject "Kuber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFED65051B66E1AD0071E75B;
+			productRefGroup = AFED650F1B66E1AD0071E75B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFED650D1B66E1AD0071E75B /* Kuber */,
+				AFED65291B66E1AD0071E75B /* KuberTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFED650C1B66E1AD0071E75B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFED65681B6724AD0071E75B /* Filters.plist in Resources */,
+				AFED65201B66E1AD0071E75B /* Main.storyboard in Resources */,
+				AFED65251B66E1AD0071E75B /* LaunchScreen.xib in Resources */,
+				AFED65991B68342C0071E75B /* CartItemTableViewCell.xib in Resources */,
+				AFED65221B66E1AD0071E75B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFED65281B66E1AD0071E75B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFED650A1B66E1AD0071E75B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFED655D1B6719250071E75B /* MarketItemDetailViewController.m in Sources */,
+				AFED65661B6721AB0071E75B /* FilterTableViewController.m in Sources */,
+				AFED655A1B66F1850071E75B /* Layout.m in Sources */,
+				AFED656B1B6734110071E75B /* Kuber.xcdatamodeld in Sources */,
+				AFED654F1B66E3DF0071E75B /* MarketItem.m in Sources */,
+				AFED654C1B66E3430071E75B /* SecondViewController.m in Sources */,
+				AFED65981B68342C0071E75B /* CartItemTableViewCell.m in Sources */,
+				AFED65171B66E1AD0071E75B /* AppDelegate.m in Sources */,
+				AFED65631B671F3C0071E75B /* CartViewController.m in Sources */,
+				AFED65561B66E6A40071E75B /* MarketItemCollectionViewCell.m in Sources */,
+				AFED654B1B66E3430071E75B /* MarketPlaceViewController.m in Sources */,
+				AFED65141B66E1AD0071E75B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFED65261B66E1AD0071E75B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFED65311B66E1AD0071E75B /* KuberTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFED652C1B66E1AD0071E75B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AFED650D1B66E1AD0071E75B /* Kuber */;
+			targetProxy = AFED652B1B66E1AD0071E75B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AFED651E1B66E1AD0071E75B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFED651F1B66E1AD0071E75B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AFED65231B66E1AD0071E75B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFED65241B66E1AD0071E75B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFED65321B66E1AD0071E75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AFED65331B66E1AD0071E75B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFED65351B66E1AD0071E75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Kuber/Frameworks",
+				);
+				INFOPLIST_FILE = Kuber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AFED65361B66E1AD0071E75B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Kuber/Frameworks",
+				);
+				INFOPLIST_FILE = Kuber/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AFED65381B66E1AD0071E75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KuberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kuber.app/Kuber";
+			};
+			name = Debug;
+		};
+		AFED65391B66E1AD0071E75B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KuberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kuber.app/Kuber";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFED65091B66E1AD0071E75B /* Build configuration list for PBXProject "Kuber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFED65321B66E1AD0071E75B /* Debug */,
+				AFED65331B66E1AD0071E75B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFED65341B66E1AD0071E75B /* Build configuration list for PBXNativeTarget "Kuber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFED65351B66E1AD0071E75B /* Debug */,
+				AFED65361B66E1AD0071E75B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AFED65371B66E1AD0071E75B /* Build configuration list for PBXNativeTarget "KuberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFED65381B66E1AD0071E75B /* Debug */,
+				AFED65391B66E1AD0071E75B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AFED65691B6734110071E75B /* Kuber.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AFED656A1B6734110071E75B /* Kuber.xcdatamodel */,
+			);
+			currentVersion = AFED656A1B6734110071E75B /* Kuber.xcdatamodel */;
+			path = Kuber.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AFED65061B66E1AD0071E75B /* Project object */;
+}
